@@ -18,8 +18,7 @@ namespace TestString
             Console.WriteLine("OldMac:{0}", oldMac);
             Console.WriteLine("NewMac:{0}\n", newMac);
 
-            //oldMac = oldMac.Replace("", "_"/*newMac*/);
-            oldMac = Regex.Replace(oldMac, "$.", ",");
+            oldMac = Regex.Replace(oldMac, "..-..-..-..-..-..", ",");
 
             Console.WriteLine("After replace");
             Console.WriteLine("OldMac:{0}", oldMac);
